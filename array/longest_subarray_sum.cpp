@@ -38,7 +38,7 @@ int optimalMaxSubArray(vector<int>&nums){
     
 }
 
-//best 
+//best -> kadane's algo
 int maxSubArray(vector<int>&nums){
     int sum=0;
     int ans = 0;

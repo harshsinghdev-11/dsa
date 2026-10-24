@@ -8,6 +8,7 @@ class TopoStrategy{
 };
 
 class Bfs_Topo: public TopoStrategy{
+    public:
     vector<int>topoSort(vector<vector<int>>&adjList){
         int V = adjList.size();
         vector<int>inDegree(V,0);

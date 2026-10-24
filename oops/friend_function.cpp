@@ -16,14 +16,21 @@ class Employee {
 
     // Declare friend function
     friend void displaySalary(Employee emp);
+    friend void setSalary(Employee &emp,int salary);
 };
 
+void setSalary(Employee &emp,int salary){
+  emp.salary = salary;
+}
+
 void displaySalary(Employee emp) {
-  cout << "Salary: " << emp.salary;
+  cout << "Salary: " << emp.salary<<endl;
 }
 
 int main() {
   Employee myEmp(50000);
+  displaySalary(myEmp);
+  setSalary(myEmp,20);
   displaySalary(myEmp);
   return 0;
 }
